@@ -1,0 +1,70 @@
+
+@font-face {
+    font-family: "King Lionel";
+    src: url('../fonts/King Lionel - Personal Use.ttf'); 
+    }
+    
+
+body{
+    color : black;
+    height: 100%
+    /* font-family: "King Lionel";*/
+}
+
+#section_depot {
+    background-image: url("../src/annoncehouse50.png"); 
+    background-size: cover;
+}
+
+.section_contact{
+    background-image: url("../src/contact50.png"); 
+    background-size: cover;
+}
+
+ul#mainmenu {
+    display: inline;
+    list-style-type: none;
+}
+
+ul#mainmenu li {
+    display: inline
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+/* form div {
+    margin : 10px;
+} */
+
+header {
+    background-color: cornflowerblue
+}
+
+.red, input[required]+span {
+    color : red
+}
+
+#titre {
+    padding: 30px; 
+}
+
+#maison {
+    display : none;
+}
+
+#appartement {
+    display: none;
+}
+
+/* div {
+    border : solid black; 
+}   */
+
+/* *[class^="col"] {
+    border : solid black;
+    background-color: grey;
+    
+} */
