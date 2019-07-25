@@ -13,7 +13,7 @@
 		<!-- <p onclick="hideAllDivs()">click</p> -->
 		
 		<div class="container">
-		<%@ include file ="header.html" %>		
+		<%@ include file ="header.jsp" %>		
 		
 		
 		<!-- CONTENU / CONTENT -->
@@ -61,7 +61,7 @@
 								<div class="col-6">
 									<div class="input-group mb-3">
 										<div class="input-group-prepend">
-											<span class="input-group-text" id="basic-addon1">Nombre de piÃ¨ces</span>
+											<span class="input-group-text" id="basic-addon1">Nombre de pièces</span>
 										</div>
 										<input class="form-control" type="number" name="rooms" id="rooms" min="0">
 									</div>
@@ -90,7 +90,7 @@
 										</div>
 										<input class="form-control" type="number" name="minsurface" id="minsurface" min="0">
 										<div class="input-group-prepend">
-											<span class="input-group-text" id="basic-addon1">mÂ²</span>
+											<span class="input-group-text" id="basic-addon1">m²</span>
 										</div>
 									</div>
 								</div>
@@ -101,7 +101,7 @@
 										</div>
 										<input class="form-control" type="number" name="maxsurface" id="maxsurface" min="0">
 										<div class="input-group-prepend">
-											<span class="input-group-text" id="basic-addon1">mÂ²</span>
+											<span class="input-group-text" id="basic-addon1">m²</span>
 										</div>
 									</div>
 								</div>
@@ -119,9 +119,9 @@
 											</div>
 											<input class="form-control " type="number" name="minprice" id="minprice" min="0" required>
 											<div class="input-group-prepend needs-validation">
-												<span class="input-group-text" id="basic-addon1">â¬</span>
+												<span class="input-group-text" id="basic-addon1">€</span>
 												<div class="valid-feedback">Valide</div>
-												<div class="invalid-feedback">Prix Ã  partir de 1â¬.</div>
+												<div class="invalid-feedback">Prix à  partir de.</div>
 											</div>
 										</div>
 									</div>
@@ -132,7 +132,7 @@
 											</div>
 											<input class="form-control" type="number" name="maxprice" id="maxprice" min="0">
 											<div class="input-group-prepend">
-												<span class="input-group-text" id="basic-addon1">â¬</span>
+												<span class="input-group-text" id="basic-addon1">€</span>
 											</div>
 										</div>
 									</div>
@@ -206,7 +206,7 @@
 		
 		<!--   ASIDE  -->
 		<aside>
-			<header><h1>Derniers bien ajoutÃ©s</h1></header>
+			<header><h1>Derniers bien ajoutés</h1></header>
 			<div class="container">
 				<div class="row">
 				<div class="col-sm-3">
@@ -215,8 +215,8 @@
 							<img src="images\appart1.jpg" class="card-img-top" alt="house">
 							<div class="card-body">
 								
-								<h5 class="card-title">340 000 â¬</h5>
-								<p class="card-text">Bien Ã  saisir !</p>
+								<h5 class="card-title">340 000 €</h5>
+								<p class="card-text">Bien à  saisir !</p>
 								<div class="row">
 									<div class="col-sm-8">
 										<a href="#" class="btn btn-primary btn-sm">Voir plus</a>
@@ -238,8 +238,8 @@
 							<img src="images\appart2.jpg" class="card-img-top img-fluid" alt="house">
 							<div class="card-body">
 								
-								<h5 class="card-title">340 000 â¬</h5>
-								<p class="card-text">Bien Ã  saisir !</p>
+								<h5 class="card-title">340 000 €</h5>
+								<p class="card-text">Bien à saisir !</p>
 								<div class="row">
 									<div class="col-sm-8">
 										<a href="#" class="btn btn-primary btn-sm">Voir plus</a>
@@ -261,8 +261,8 @@
 							<img src="images\appart3.jpg" class="card-img-top" alt="house">
 							<div class="card-body">
 								
-								<h5 class="card-title">340 000 â¬</h5>
-								<p class="card-text">Bien Ã  saisir !</p>
+								<h5 class="card-title">340 000 €</h5>
+								<p class="card-text">Bien à saisir !</p>
 								<div class="row">
 									<div class="col-sm-8">
 										<a href="#" class="btn btn-primary btn-sm">Voir plus</a>
@@ -284,8 +284,8 @@
 							<img src="images\appart4.jpg" class="card-img-top" alt="house">
 							<div class="card-body">
 								
-								<h5 class="card-title">340 000 â¬</h5>
-								<p class="card-text">Bien Ã  saisir !</p>
+								<h5 class="card-title">340 000 €</h5>
+								<p class="card-text">Bien à saisir !</p>
 								<div class="row">
 									<div class="col-sm-8">
 										<a href="#" class="btn btn-primary btn-sm">Voir plus</a>
@@ -305,9 +305,7 @@
 		</div>
 		</aside>
 		<!--   PIED-PAGE/FOOTER  -->
-		<?php 
-		echo file_get_contents('footer.html');
-		?>
+		<%@ include file ="footer.jsp" %>
 		</div>
     </body>
     
