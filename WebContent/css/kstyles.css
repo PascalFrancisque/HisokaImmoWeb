@@ -1,0 +1,72 @@
+@font-face{
+    font-family : "king lionel";
+    src : url("../polices/King Lionel - Personal Use.ttf");
+}
+body {
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* header, nav, section, footer, article, aside {
+    border-style: solid;
+    border-width: 1px;
+    
+} */
+
+#menu{
+    display: inline;
+    list-style-type: none;
+}
+
+ul#menu li{
+    display: inline;
+}
+.hide {
+    display: none;
+}
+
+.show {
+    display: inline-block;
+}
+
+/* div[class^="col-"] {
+    border: solid;
+    border-color: blueviolet;
+    border-style: solid;
+} */
+h1 {
+    font-size: 150%;
+}
+.header-nav, section  {
+    margin-bottom: 30px;
+}
+
+#background_recherche {
+    background-color: lightblue;
+    /* background-image: url("../images/annonce.png"); */
+}
+
+#recherche {
+    width: 80%;
+}
+
+#footer {
+    margin-top : 30px;
+    background-color: #e3f2fd;
+}
+.card-img-top {
+    max-height: 150px;
+}
+.card-img-top.side-crop {
+    max-height: 150px;
+    overflow: hidden;
+    object-fit: cover;
+}
+.carousel-item {
+    max-height: 400px;
+}
+.carousel-item.side-crop {
+    max-height: 400px;
+    overflow: hidden;
+    object-fit: cover;
+}
