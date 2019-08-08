@@ -4,23 +4,18 @@
 <html>
 
 <head>
-	<meta charset="utf-8" />
 	<title> Contact </title>
-	<link rel="stylesheet" href="bootstrap-4.3.1/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="fontawesome/css/all.min.css">
-	<link rel="stylesheet" href="css/style.css" />
-	<script src="jquery/jquery-3.4.1.js"></script>
-	<script src="bootstrap-4.3.1/js/bootstrap.js"></script>
-	<script src="jQuery-Bootstrap-4-Typeahead/bootstrap3-typeahead.js"></script>
-	<script src="js/realestate.js"></script>
+	<%@include file="head.html"%>
+	<%@include file="header.jsp"%>
+	
 </head>
 
-<body class="container">
+<body>
 
 	<!--   ENTETE/HEADER  -->
-	<%@include file="header.jsp"%>
-
-	<section class="section_contact">
+	<div id="page-container">
+ 
+	<section class="section_contact container">
 		<!-- CONTENU / CONTENT -->
 		<div class="col-lg-12 col text-center">
 			<div id="titre">
@@ -114,9 +109,9 @@
 			</div>
 		</form>
 	</section>
-
 	<!--   PIED-PAGE/FOOTER  -->
 	<%@include file="footer.jsp"%>
+	</div>
 </body>
 
 </html>

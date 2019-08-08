@@ -7,20 +7,14 @@
 		<title> ACCUEIL </title>
 		<%@ include file ="head.html" %>
 	</head>
-	
+	<%@ include file ="header.jsp" %>
 	<body >
-		<!-- <p onclick="makeRequired();">click</p> -->
-		<!-- <p onclick="hideAllDivs()">click</p> -->
-		
-		<div class="container">
-		<%@ include file ="header.jsp" %>		
-		
-		
+		<div id="page-container">
 		<!-- CONTENU / CONTENT -->
-		<section class="border">
-			<div class="container " id="background_recherche">
+		<section class="">
+			<div class="container" id="background_recherche">
 				<div class="container" id="recherche">
-					<form id="research" action="#" method="GET">
+					<form id="research" action="resultat.jsp" method="GET">
 					<header><h1>Votre recherche</h1></header>
 					<ul class="nav nav-tabs">
 						<li class="nav-item">
@@ -121,7 +115,7 @@
 											<div class="input-group-prepend needs-validation">
 												<span class="input-group-text" id="basic-addon1">€</span>
 												<div class="valid-feedback">Valide</div>
-												<div class="invalid-feedback">Prix à  partir de.</div>
+												<div class="invalid-feedback">Prix à partir de</div>
 											</div>
 										</div>
 									</div>
@@ -191,8 +185,6 @@
 									<input class="btn btn-success " type="submit" value="RECHERCHER" >
 								</div>
 							</div>
-
-							</select> 
 						</div>
 					</div>
 					<div class="row">
@@ -205,24 +197,26 @@
 		</section>
 		
 		<!--   ASIDE  -->
-		<aside>
-			<header><h1>Derniers bien ajoutés</h1></header>
+		<section class="">
 			<div class="container">
+			<header><h1>Derniers biens ajoutés</h1></header>
 				<div class="row">
 				<div class="col-sm-3">
 					<article>
-						<div class="card">
-							<img src="images\appart1.jpg" class="card-img-top" alt="house">
+						<div class="card"> 
+							<img src="src/immo1.png" class="card-img-top img-fluid" alt="house">
 							<div class="card-body">
 								
 								<h5 class="card-title">340 000 €</h5>
 								<p class="card-text">Bien à  saisir !</p>
 								<div class="row">
 									<div class="col-sm-8">
-										<a href="#" class="btn btn-primary btn-sm">Voir plus</a>
+										<a href="detail.jsp" class="btn btn-primary btn-sm">Voir plus</a>
 									</div>
 									<div class="col-sm-2">
-										<i class="far fa-paper-plane"></i>
+										<a href="contact.jsp">
+										<i class="far fa-paper-plane" ></i>
+										</a>
 									</div>
 									<div class="col-sm-2">
 										<i class="far fa-heart"></i>
@@ -235,40 +229,19 @@
 				<div class="col-sm-3">
 					<article>
 						<div class="card">
-							<img src="images\appart2.jpg" class="card-img-top img-fluid" alt="house">
+							<img src="src/immo1.png" class="card-img-top img-fluid" alt="house">
 							<div class="card-body">
 								
 								<h5 class="card-title">340 000 €</h5>
 								<p class="card-text">Bien à saisir !</p>
 								<div class="row">
 									<div class="col-sm-8">
-										<a href="#" class="btn btn-primary btn-sm">Voir plus</a>
+										<a href="detail.jsp" class="btn btn-primary btn-sm">Voir plus</a>
 									</div>
 									<div class="col-sm-2">
-										<i class="far fa-paper-plane"></i>
-									</div>
-									<div class="col-sm-2">
-										<i class="far fa-heart"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-					</article>
-				</div>
-				<div class="col-sm-3">
-					<article>
-						<div class="card">
-							<img src="images\appart3.jpg" class="card-img-top" alt="house">
-							<div class="card-body">
-								
-								<h5 class="card-title">340 000 €</h5>
-								<p class="card-text">Bien à saisir !</p>
-								<div class="row">
-									<div class="col-sm-8">
-										<a href="#" class="btn btn-primary btn-sm">Voir plus</a>
-									</div>
-									<div class="col-sm-2">
-										<i class="far fa-paper-plane"></i>
+										<a href="contact.jsp">
+										<i class="far fa-paper-plane" ></i>
+										</a>
 									</div>
 									<div class="col-sm-2">
 										<i class="far fa-heart"></i>
@@ -281,17 +254,44 @@
 				<div class="col-sm-3">
 					<article>
 						<div class="card">
-							<img src="images\appart4.jpg" class="card-img-top" alt="house">
+							<img src="src/immo1.png" class="card-img-top img-fluid" alt="house">
 							<div class="card-body">
 								
 								<h5 class="card-title">340 000 €</h5>
 								<p class="card-text">Bien à saisir !</p>
 								<div class="row">
 									<div class="col-sm-8">
-										<a href="#" class="btn btn-primary btn-sm">Voir plus</a>
+										<a href="detail.jsp" class="btn btn-primary btn-sm">Voir plus</a>
 									</div>
 									<div class="col-sm-2">
-										<i class="far fa-paper-plane"></i>
+										<a href="contact.jsp">
+										<i class="far fa-paper-plane" ></i>
+										</a>
+									</div>
+									<div class="col-sm-2">
+										<i class="far fa-heart"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+				<div class="col-sm-3">
+					<article>
+						<div class="card">
+							<img src="src/immo1.png" class="card-img-top img-fluid" alt="house">
+							<div class="card-body">
+								
+								<h5 class="card-title">340 000 €</h5>
+								<p class="card-text">Bien à saisir !</p>
+								<div class="row">
+									<div class="col-sm-8">
+										<a href="detail.jsp" class="btn btn-primary btn-sm">Voir plus</a>
+									</div>
+									<div class="col-sm-2">
+										<a href="contact.jsp">
+										<i class="far fa-paper-plane" ></i>
+										</a>
 									</div>
 									<div class="col-sm-2">
 										<i class="far fa-heart"></i>
@@ -303,10 +303,11 @@
 				</div>
 			</div>
 		</div>
-		</aside>
-		<!--   PIED-PAGE/FOOTER  -->
+		</section>
 		<%@ include file ="footer.jsp" %>
 		</div>
+		
+		<!--   PIED-PAGE/FOOTER  -->
     </body>
     
 </html>

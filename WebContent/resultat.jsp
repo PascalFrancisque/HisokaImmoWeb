@@ -8,11 +8,9 @@
 		<title> RESULTATS </title>
 		<%@ include file ="head.html" %>
 	</head>
-	
+	<%@ include file ="header.jsp" %>	
 	<body>
 		<div class="container">
-		<%@ include file ="header.jsp" %>	
-		
 		<!-- CONTENU / CONTENT -->
 		<section>
 			<header>
@@ -55,7 +53,7 @@
 					<div class="col-sm-3 mb-3">
 						<article>
 							<div class="card">
-								<img src="images\appart3.jpg" class="card-img-top side-crop" alt="house">
+								<img src="src/immo5.png" class="card-img-top side-crop" alt="house">
 								<div class="card-body">
 									
 									<h5 class="card-title">Prix</h5>
@@ -78,7 +76,7 @@
 					<div class="col-sm-3">
 						<article>
 							<div class="card">
-								<img src="images\appart3.jpg" class="card-img-top side-crop" alt="house">
+								<img src="src/immo5.png" class="card-img-top side-crop" alt="house">
 								<div class="card-body">
 									
 									<h5 class="card-title">Prix</h5>
@@ -124,7 +122,7 @@
 					<div class="col-sm-3">
 						<article>
 							<div class="card">
-								<img src="images\appart3.jpg" class="card-img-top side-crop" alt="house">
+								<img src="src/immo5.png" class="card-img-top side-crop" alt="house">
 								<div class="card-body">
 									
 									<h5 class="card-title">Prix</h5>
@@ -150,7 +148,7 @@
 				<div class="col-sm-3">
 					<article>
 						<div class="card">
-							<img src="images\appart3.jpg" class="card-img-top side-crop" alt="house">
+							<img src="src/immo5.png" class="card-img-top side-crop" alt="house">
 							<div class="card-body">
 								
 								<h5 class="card-title">Prix</h5>
@@ -173,7 +171,7 @@
 				<div class="col-sm-3">
 					<article>
 						<div class="card">
-							<img src="images\appart3.jpg" class="card-img-top side-crop" alt="house">
+							<img src="src/immo5.png" class="card-img-top side-crop" alt="house">
 							<div class="card-body">
 								
 								<h5 class="card-title">Prix</h5>
@@ -196,7 +194,7 @@
 				<div class="col-sm-3">
 					<article>
 						<div class="card">
-							<img src="images\appart3.jpg" class="card-img-top side-crop" alt="house">
+							<img src="src/immo5.png" class="card-img-top side-crop" alt="house">
 							<div class="card-body">
 								
 								<h5 class="card-title">Prix</h5>
@@ -219,7 +217,7 @@
 				<div class="col-sm-3">
 					<article>
 						<div class="card">
-							<img src="images\appart3.jpg" class="card-img-top side-crop" alt="house">
+							<img src="src/immo5.png" class="card-img-top side-crop" alt="house">
 							<div class="card-body">
 								
 								<h5 class="card-title">Prix</h5>
@@ -265,17 +263,8 @@
 				</div>
 			</div>
 		</section>
-
-		<!--   ASIDE  
-		<aside>
-			<header>BIENS SIMILAIRES</header>
-			<div>ANNONCES</div>
-			<footer></footer>
-		</aside>-->
-
-		<!--   PIED-PAGE/FOOTER  -->
-		<%@ include file ="footer.jsp" %>
 		</div>
+		<%@ include file ="footer.jsp" %>
 	</body>
 </html>
 	

@@ -1,36 +1,22 @@
-<!doctype html>
-<html>
-
-<head>
-	<meta charset="utf-8" />
-	<link rel="stylesheet" href="bootstrap-4.3.1/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="fontawesome/css/all.min.css">
-	<link rel="stylesheet" href="css/style.css" />
-	<script src="jquery/jquery-3.4.1.js"></script>
-	<script src="bootstrap-4.3.1/js/bootstrap.js"></script>
-	<script src="jQuery-Bootstrap-4-Typeahead/bootstrap3-typeahead.js"></script>
-	<script src="js/realestate.js"></script>
-</head>
-<header>
+<header id="header-fixed">
 	<!-- NAVIGATION -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-height">
 		<!--   LOGO DU SITE  -->
 		<div class="collapse navbar-collapse">
-		<a class="navbar-brand" href="#">Hisoka RealEstate<a>
-				<!--   MENU  -->
-				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-					<li class="nav-item">
-						<a class="nav-link" href="#">Compte <i class="fas fa-user-circle"></i></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Favoris <i class="far fa-heart"></i></a>
-					</li>
-				</ul>
-				
-				<!-- BOUTON DEPOSER UNE ANNONCE -->
-				<button class="btn btn-outline-primary" type="submit">Déposer une annonce</button>
-			</div>
+		<a class="navbar-brand" href="index.jsp"><img src="http://placehold.it/150x50?text=Logo" alt="">
+		Hisoka RealEstate</a>
+			<!--   MENU  -->
+			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+				<li class="nav-item">
+					<a class="nav-link" href="login.jsp"><!-- <i class="fas fa-user-circle"></i>--></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="resultat.jsp"><!-- <i class="far fa-heart"></i> --></a>
+				</li>
+			</ul>
+			<!-- BOUTON DEPOSER UNE ANNONCE -->
+			<a href="depot.jsp"><button class="btn btn-outline-light" type="submit">Déposer une annonce</button></a>
+			<a href="depot.jsp"><button class="btn btn-outline-info" type="submit">Se connecter</button></a>
+		</div>
 	</nav>
 </header>
-
-</html>
